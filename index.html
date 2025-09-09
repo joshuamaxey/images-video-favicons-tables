@@ -1,9 +1,9 @@
 <!-- 
 In the first section with an h2 in the main, we'll be adding two images to our page. ✅
-In the second section with an h2 in the main, we'll add video to the page using HTML5 and using a YouTube embed.
-In the third section with an h2 in the main, you'll see some information about favicons, and we will create and add a favicon to the page.
-In the fourth section in the main with an h2, you'll find some information about using SVGs in HTML. We'll practice this by adding an SVG icon to the footer.
-In the fifth section in the main with an h2, you'll see some information about tables, and a partially completed table. We will work together to complete it. 
+In the second section with an h2 in the main, we'll add video to the page using HTML5 and using a YouTube embed. ✅
+In the third section with an h2 in the main, you'll see some information about favicons, and we will create and add a favicon to the page. ✅
+In the fourth section in the main with an h2, you'll find some information about using SVGs in HTML. We'll practice this by adding an SVG icon to the footer. ✅
+In the fifth section in the main with an h2, you'll see some information about tables, and a partially completed table. We will work together to complete it. ✅
 -->
 
 <!DOCTYPE html>
@@ -20,6 +20,7 @@ In the fifth section in the main with an h2, you'll see some information about t
 
     <!-- A FAVICON -->
     <!-- TO DO: add the favicon here -->
+    <link rel="icon" href="images/favicon.png" />
 
     <!-- GOOGLE FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -135,7 +136,12 @@ In the fifth section in the main with an h2, you'll see some information about t
 
           <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
 
-          <img src="images/square-red-blue.jpg" alt="Painting-style image of swirling red and blue clouds" height="400" width="400">
+          <img
+            src="images/square-red-blue.jpg"
+            alt="Painting-style image of swirling red and blue clouds"
+            height="400"
+            width="400"
+          />
 
           <p class="credit">
             Photo by
@@ -163,7 +169,12 @@ In the fifth section in the main with an h2, you'll see some information about t
 
           <!-- TO DO: add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
 
-          <img src="images/memphis-recording-service.jpg" alt="image of a neon sign that reads 'Memphis Recording Service'" height="400" width="400">
+          <img
+            src="images/memphis-recording-service.jpg"
+            alt="image of a neon sign that reads 'Memphis Recording Service'"
+            height="400"
+            width="400"
+          />
 
           <p class="credit">
             Photo by
@@ -203,6 +214,8 @@ In the fifth section in the main with an h2, you'll see some information about t
           </p>
 
           <!-- TO DO: Add the video from the files below using HTML5 -->
+
+          <video src="video/video.mp4" controls width="500"></video>
 
           <a
             href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/"
@@ -302,6 +315,7 @@ In the fifth section in the main with an h2, you'll see some information about t
           <tr>
             <!-- TO DO: Complete the code below to create a cell that will span all columns -->
             <!-- Wednesday - <span class="bold">Closed</span> -->
+             <td colspan="2">Wednesday - <strong>Closed</strong></td>
           </tr>
 
           <tr>
@@ -320,9 +334,11 @@ In the fifth section in the main with an h2, you'll see some information about t
             <td rowspan="2"><span>Closed</span> By Appointment Only</td>
           </tr>
 
+          
           <tr>
-            <!-- TO DO: Complete the code below to create a cell containing that text -->
-            <!-- Sunday -->
+              <!-- TO DO: Complete the code below to create a cell containing that text -->
+              <!-- Sunday -->
+              <td>Sunday</td>
           </tr>
         </table>
       </section>
@@ -341,6 +357,21 @@ In the fifth section in the main with an h2, you'll see some information about t
 
         <a href="#" aria-label="find us on facebook">
           <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+            />
+          </svg>
         </a>
 
         <a href="#" aria-label="find us on instagram">
